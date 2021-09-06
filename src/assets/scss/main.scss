@@ -1,0 +1,26 @@
+@import 'base/init';
+@import 'components/init';
+
+html {
+    height: 100%;
+    overflow-y: auto !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.v-application {
+    font-family: 'Nunito', sans-serif !important;
+}

@@ -1,0 +1,205 @@
+.efishery-search{
+    &.v-text-field{
+        &.v-input.v-text-field--single-line{
+            .v-input__control{
+                min-height: unset;
+                .v-input__slot{
+                    margin-bottom: unset !important;
+                    box-shadow: unset !important;
+                    min-height: 40px;
+                    .v-text-field__slot{
+                        .v-label, input{
+                            font-size: 12px;
+                        }
+                    }
+                    .v-input__append-inner{
+                        .v-input__icon{
+                            .v-icon{
+                                font-size: 16px;
+                                &, &.primary--text{
+                                    color: #28b796 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                .v-text-field__details{
+                    display: none;
+                }
+            }
+        }
+        > .v-input__control, > .v-input__control:hover{
+            > .v-input__slot{
+                border: 1px solid #d9d9d9 !important;
+            }
+        }
+    }
+}
+
+.efishery-form{
+    &.v-text-field{
+        &.v-input.v-text-field--single-line{
+            &.v-input--is-readonly{
+                cursor: not-allowed;
+                .v-input__control{
+                    min-height: unset;
+                    cursor: not-allowed;
+                    .v-input__slot{
+                        box-shadow: unset !important;
+                        cursor: not-allowed;
+                        background-color: #ececec;
+                        .v-text-field__slot{
+                            .v-label, input{
+                                cursor: not-allowed;
+                            }
+                        }
+                    }
+                }
+            }
+            .v-input__control{
+                .v-input__slot{
+                    min-height: 40px;
+                    .v-text-field__slot{
+                        .v-label, input{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            &.loading-red{
+                %color-loading-red {
+                    background-color: #e74c3c !important;
+                    border-color: #e74c3c !important;
+                }
+                .v-input__control{
+                    .v-input__slot{
+                        .v-progress-linear{
+                            .v-progress-linear__background{
+                                &.primary {
+                                    @extend %color-loading-red;
+                                }
+                            }
+                            .v-progress-linear__bar{
+                                .v-progress-linear__bar__indeterminate{
+                                    .v-progress-linear__bar__indeterminate {
+                                        &.long, &.short {
+                                            &.primary {
+                                                @extend %color-loading-red;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        > .v-input__control, > .v-input__control:hover{
+            > .v-input__slot{
+                border: 1px solid #ddd !important;
+            }
+        }
+
+        &.form-reset{
+            &.v-input.v-text-field--single-line{
+                .v-input__control{
+                    .v-input__slot{
+                        min-height: 40px !important;
+                        margin-bottom: unset !important;
+                    }
+                    .v-text-field__details{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // textarea
+    &.v-textarea{
+        .v-input__control{
+            .v-input__slot{
+                .v-text-field__slot{
+                    textarea{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .v-text-field__details{
+                padding-right: unset;
+                .v-counter{
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &.form-style-default.v-text-field{
+        &.v-input.v-text-field--single-line{
+            .v-input__control{
+                min-height: unset;
+                .v-input__slot{
+                    margin-bottom: unset !important;
+                    box-shadow: unset !important;
+                    min-height: 40px;
+                    .v-text-field__slot{
+                        .v-label, input{
+                            font-size: 12px;
+                        }
+                    }
+                    .v-input__append-inner{
+                        .v-input__icon{
+                            .v-icon{
+                                font-size: 16px;
+                                &, &.primary--text{
+                                    color: #28b796 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                .v-text-field__details{
+                    display: none;
+                }
+            }
+        }
+        > .v-input__control{
+            > .v-input__slot{
+                border: 1px solid #d9d9d9 !important;
+            }
+        }
+    }
+    
+    &.form-style-fill.v-text-field{
+        > .v-input__control{
+            > .v-input__slot{
+                border: 1px solid #eee !important;
+                background-color: whitesmoke !important;
+                transition: .3s ease-in-out;
+                .v-text-field__slot{
+                    input{
+                        color:#888 !important;
+                        &::placeholder{
+                            color:#ccc !important
+                        }
+                        &:focus{
+                            color:#555 !important;
+                        }
+                    }
+                }
+            }
+        }
+        &.v-input--is-focused{
+            > .v-input__control{
+                > .v-input__slot{
+                    border: 1px solid #ddd !important;
+                    background-color: #fff !important;
+                    transition: .3s ease-in;
+                }
+            }
+        }
+    }
+}

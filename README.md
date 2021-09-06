@@ -1,24 +1,18 @@
-# efishery_frontend_tests
+# Link Preview Project
+[Preview Link](https://efishery-test-fe.netlify.app/)
+# Installation 
 
-## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+``` 
+git clone https://github.com/fhlevi/efishery_frontend_tests
 
-### Compiles and minifies for production
-```
-yarn build
+cd efishery_frontend_tests
+
+npm install or yarn install
+
+npm run serve or yarn serve
 ```
 
-### Run your unit tests
-```
-yarn test:unit
-```
+use version Node Js v12 or higher
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+and now this project running on [locahost:9000](http://localhost:9000)

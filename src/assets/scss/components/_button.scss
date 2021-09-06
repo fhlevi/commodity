@@ -1,0 +1,53 @@
+.efishery-button{
+    &.v-btn{
+        border-radius: 0.4em;
+        text-transform: unset !important;
+        box-shadow: unset;
+
+        &.v-size--default{
+            font-size: 14px !important;
+            font-weight: 700;
+            align-items: center;
+
+            &.small-button{
+                font-size: 14px !important;
+                max-height: 36px !important;
+                padding: 10px 24px !important;
+            }
+    
+            &.medium-button{
+                height: 44px !important;
+                padding: 14px 24px !important;
+            }
+
+            &.v-btn--block{
+                height: 44px !important;
+            }
+        }
+
+        &.v-btn--has-bg{
+            background-color: #28b796 !important;
+            &:hover{
+                background-color: #28b796;
+            }
+        }
+
+        span.v-btn__content{
+            color: #ffffff;
+            em.left-icon{
+                margin-right: 12px;
+            }
+
+            em.right-icon{
+                margin-left: 12px;
+            }
+        }
+
+        &.btn-white {
+            .v-btn__content{
+                color: #000;
+            }
+        }
+
+    }
+}
