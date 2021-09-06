@@ -89,15 +89,6 @@ export default {
     created() {
         this.getListDataKomoditas()
     },
-    watch: {
-        gx_dataCommodity: {
-            immediate: true,
-            handler(val) {
-                this.dataItems = val
-                this.dataItemsSearch = val
-            }
-        }
-    },
     methods: {
         ...mapActions({
             ax_setDataCommodity: 'storeKomoditas/setDataCommodity'
@@ -109,9 +100,16 @@ export default {
                 }
                 const res = await this.$stein.komoditas.getDataKomoditas()
                 this.ax_setDataCommodity(res)
+                this.generateDataToList()
             } catch (e) {
                 console.error(e)
             }
+        },
+        generateDataToList() {
+            const dataCommodity = this.gx_dataCommodity
+
+            this.dataItems = dataCommodity
+            this.dataItemsSearch = dataCommodity
         },
         haveDataAvailability(data, type=null) {
             const allowed_to_currency = ['price']
