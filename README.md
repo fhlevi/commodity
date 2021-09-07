@@ -1,5 +1,5 @@
 # Link Preview Project
-[Preview Link](https://efishery-test-fe.netlify.app/)
+[Preview Link](https://efishery-tests.netlify.app/)
 # Installation 
 
 
