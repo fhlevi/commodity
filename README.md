@@ -1,4 +1,4 @@
-# Link Preview Project
+# Link Preview Project Vue
 [Preview Link](https://efishery-tests.netlify.app/)
 # Installation 
 
